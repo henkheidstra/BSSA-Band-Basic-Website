@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Allan|Allerta|Bungee" rel="stylesheet">
+    <!--<title>Document</title>-->
+</head>
+
+<body>
+    <div class="navigation-bar"></div>
+    <IMG class="logo" SRC="images/bssa.png">
+    <ul id="nav">
+        <li class="left"><a href="#" data-target="home">Home</a></li>
+        <li class="right"><a href="#" data-target="about">About</a></li>
+        <li class="left"><a href="#" data-target="music">Music</a></li>
+        <li class="right"><a href="#" data-target="contact">Contact</a></li>
+    </ul>
+    <br><br><br>
+
+    <div class="content">
+        <div class="home">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab repellendus similique est! Ut iusto, est consectetur blanditiis culpa distinctio magnam. Laudantium unde quam minus voluptate laboriosam, inventore temporibus tenetur maiores.</h1>>
+        </div>
+
+        <div class="about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio modi, facilis atque dolorem commodi, quibusdam vel sed quaerat voluptatem sunt debitis rem ipsam eaque deserunt sit corporis itaque soluta ipsum! </p>
+        </div>
+
+        <div class="music">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam quis distinctio id fugit, nam debitis inventore porro quo eaque deleniti, dolorem recusandae ipsam officiis ea voluptatem autem eius veniam. </p>
+        </div>
+
+        <div class="contact">
+            <div class="contactform">
+                <form action="index.html" method="post">
+                    <input type="text" name="" class="inputtext" value="First Name">
+                    <input type="text" name="" class="inputtext" value="Last Name">
+                    <input type="text" name="" class="inputtext" value="Your Email">
+                    <textarea cols="4" rows="6" class="inputmessage">Your Message</textarea>
+                    <input type="button" name="" class="submitbutton" value="Submit">
+                </form>
+            </div>
+            <p>test
+                <p>
+        </div>
+    </div>
+</body>
+
+<div id="player-control"></div>
+<!-- Include Styles of the background player -->
+<link href="YTPlayer.css" media="all" rel="stylesheet" type="text/css">
+<!-- Include jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<!-- Include Plugin Core -->
+<script src="plugins/jquery.mb.YTPlayer.min.js"></script>
+
+<script>
+    jQuery(function () {
+        /* Initialize the player */
+        var myPlayer = jQuery(".player").YTPlayer();
+    });
+</script>
+
+<script type="text/javascript" language="javascript">
+    $(document).ready(function() { /// Wait till page is loaded
+       $('#detailed').click(function(){
+          $('#main').load('property-detailed.php #main', function() {
+               /// can add another function here
+          });
+       });
+    }); //// End of Wait till page is loaded
+    </script>
+
+<div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1, useOnMobile:true}">
+</div>
+
+
+<div class="footer">
+    <p>© 2018 Henk Heidstra All Rights Reserved</p>
+</div>
+
+</html>

@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    color: #544738;
+    font-family: helvetica, sans-serif;
+}
+
+
+.logo {
+    display: inline-block;
+    vertical-align: left;
+    width: 400px;
+    height: 200px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.logo:hover {
+    /* Transition */
+    -webkit-transition: All .5s ease;
+    -moz-transition: All .5s ease;
+    -o-transition: All .5s ease;
+
+    /* Transform */
+    -webkit-transform: rotate(10deg) scale(1.2);
+    -moz-transform: rotate(10deg) scale(1.2);
+    -o-transition: rotate(10deg) scale(1.2);
+
+}
+
+#nav {
+    display: inline-block;
+    width: 700px;
+    margin: 0 auto;
+    list-style: none;
+    /* vertical-align: top; ONLY WITH DISPLAY INLINE-BLOCK*/
+    text-align: center;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a {
+    display: inline-block;
+    text-align: center;
+    width: 75px;
+    /* fixed width */
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    font-family: 'Bungee', helvetica, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    margin: 1em;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+li a {
+    color: #F7F0F5;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #ED6A5A;
+    -webkit-transform: rotate(-10deg) scale(1.2);
+    -moz-transform: rotate(-10deg) scale(1.2);
+}
+
+.left a:hover {
+
+    /* Transition */
+
+    -webkit-transition: All .5s ease;
+    -moz-transition: All .5s ease;
+    -o-transition: All .5s ease;
+
+
+    /* Transform */
+
+    -webkit-transform: rotate(-10deg) scale(1.2);
+    -moz-transform: rotate(-10deg) scale(1.2);
+    -o-transition: rotate(-10deg) scale(1.2);
+}
+
+.right a:hover {
+
+    /* Transition */
+    -webkit-transition: All .5s ease;
+    -moz-transition: All .5s ease;
+    -o-transition: All .5s ease;
+
+    /* Transform */
+    -webkit-transform: rotate(10deg) scale(1.2);
+    -moz-transform: rotate(10deg) scale(1.2);
+    -o-transition: rotate(10deg) scale(1.2);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 2em;
+    width: 100%;
+    background-color: none;
+    color: white;
+    text-align: center;
+    font-size: 12;
+    font-family: 'Allerta', sans-serif;
+}
