@@ -5,10 +5,10 @@
 
 body {
     background: rgb(0, 0, 0);
-    color: #544738;
-    font-family: helvetica, sans-serif;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    font-size: 12;
 }
-
 
 .logo {
     display: inline-block;
@@ -17,21 +17,35 @@ body {
     height: 200px;
     margin-right: 0px;
     margin-top: 0px;
+
+    animation: spinHorizontal 7s linear infinite;
+      }
+      
+      @keyframes spinHorizontal {
+        100% { 
+          transform: rotateY(360deg); 
+        }
+        20% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          transform: rotateY(0deg);
+        }
+      }
 }
 
 .logo:hover {
     /* Transition */
-    -webkit-transition: All .5s ease;
-    -moz-transition: All .5s ease;
-    -o-transition: All .5s ease;
+    -webkit-transition: All 2s ease;
+    -moz-transition: All 2s ease;
+    -o-transition: All 2s ease;
 
     /* Transform */
-    -webkit-transform: rotate(10deg) scale(1.2);
-    -moz-transform: rotate(10deg) scale(1.2);
-    -o-transition: rotate(10deg) scale(1.2);
-
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+    -o-transition: rotate(360deg) scale(1.2);
 }
-
+    
 #nav {
     display: inline-block;
     width: 700px;
@@ -78,13 +92,12 @@ li a {
 }
 
 li a:hover {
-    color: #ED6A5A;
+    color: #c9271e;
     -webkit-transform: rotate(-10deg) scale(1.2);
     -moz-transform: rotate(-10deg) scale(1.2);
 }
 
 .left a:hover {
-
     /* Transition */
 
     -webkit-transition: All .5s ease;
@@ -100,7 +113,6 @@ li a:hover {
 }
 
 .right a:hover {
-
     /* Transition */
     -webkit-transition: All .5s ease;
     -moz-transition: All .5s ease;
@@ -110,6 +122,18 @@ li a:hover {
     -webkit-transform: rotate(10deg) scale(1.2);
     -moz-transform: rotate(10deg) scale(1.2);
     -o-transition: rotate(10deg) scale(1.2);
+}
+
+.contact {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 40;
 }
 
 .footer {

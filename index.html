@@ -5,52 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Allan|Allerta|Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Fira+Sans|Josefin+Sans|Merriweather" rel="stylesheet">
     <!--<title>Document</title>-->
 </head>
 
 <body>
-<div class="navigation-bar"></div>
-<IMG class="logo" SRC="images/bssa.png">
+    <div class="navigation-bar"></div>
+    <IMG class="logo" SRC="images/bssa.png">
     <ul id="nav">
-        <li class="left"><a href="#">Home</a></li>
-        <li class="right"><a href="#">About</a></li>
-        <li class="left"><a href="#">Music</a></li>
-        <li class="right"><a href="#">Contact</a></li>
+        <li class="left"><a href="index.html" data-target="home">Home</a></li>
+        <li class="right"><a href="about.html" data-target="about">About</a></li>
+        <li class="left"><a href="music.html" data-target="music">Music</a></li>
+        <li class="right"><a href="contact.html" data-target="contact">Contact</a></li>
     </ul>
-<br><br><br>
-
-    <div class="content">
-        <div class="Home"></div>
-        <div class="About"></div>
-        <div class="Music"></div>
-        <div class="Contact"></div>
-    </div>
+    <br><br><br>
 </body>
 
-<div id="player-control"></div>
-<!-- Include Styles of the background player -->
-<link href="YTPlayer.css" media="all" rel="stylesheet" type="text/css">
-<!-- Include jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-<!-- Include Plugin Core -->
-<script src="plugins/jquery.mb.YTPlayer.min.js"></script>
-
-<script>
-jQuery(function () {
-    /* Initialize the player */
-    var myPlayer = jQuery(".player").YTPlayer();
-});
-</script>
-
-<div id="bgndVideo" class="player" 
-     data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1, useOnMobile:true}"> </div>
-     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-     <script type="text/javascript">
-
-script type="text/javascript" src="js/jquery-1.11.3.min.js"> </script>
-
 <div class="footer">
-        <p>© 2018 Henk Heidstra All Rights Reserved</p>
-      </div>
+        <div id="player-control"></div>
+        <!-- Include Styles of the background player -->
+        <link href="YTPlayer.css" media="all" rel="stylesheet" type="text/css">
+        <!-- Include jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <!-- Include Plugin Core -->
+        <script src="plugins/jquery.mb.YTPlayer.min.js"></script>
+        
+        <script>
+            jQuery(function () {
+                /* Initialize the player */
+                var myPlayer = jQuery(".player").YTPlayer();
+            });
+        </script>
+        
+        <div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1, useOnMobile:true}">
+        </div>
+    <p>© 2018 Henk Heidstra All Rights Reserved</p>
+</div>
+
 </html>
